@@ -1,0 +1,33 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namste reat",
+  
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vedant0717/React1.git"
+  },
+  "keywords": [],
+  "author": "Vedant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vedant0717/React1/issues"
+  },
+  "homepage": "https://github.com/Vedant0717/React1#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":
+  [
+"last 2 versions"
+
+  ]
+}

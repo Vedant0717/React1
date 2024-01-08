@@ -1,34 +1,22 @@
-// const heading= React.createElement("h1",{id:"heading", xyz:"abc" },"Hello World from React")
-// const root =ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading)
-    
-    
-    /* <div id="parent">
-    <div id="child1">
-        <h1>This is heading 1</h1>
-        <h2>This is heading 2</h2>
-        <div id="child2">
-            <h1>This is heading 1</h1>
-            <h2>This is heading 2</h2>
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
+import Body from "./components/Body";
+
+
+
+
+// not using keys( not acceptable) <<<<<< index as key  <<<<<<<<<< unique id(best practice)
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
     </div>
-</div> */
+  );
+};
 
-const parent=React.createElement("div",{id:"parent"},[
-    React.createElement("div",{id :"child1"},[
-        React.createElement("h1",{},"I'm a h1 tag"),
-        React.createElement("h2",{},"I'm a h2 tag"),
-    ]),
-        React.createElement("div",{id :"child2"},[
-        React.createElement("h1",{},"I'm a h1 tag"),
-        React.createElement("h2",{},"I'm a h2 tag"),
-    ]),
-    
-    
-]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(parent);//object
-
-const root=ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(parent);
-
+root.render(<AppLayout />);
